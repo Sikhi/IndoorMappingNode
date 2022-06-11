@@ -1,11 +1,12 @@
 const isNum = function (val:any) {
     return typeof val === 'number' && !isNaN(val);
   };
-  
-  export default (ev: any, toElement:Element) => {
+
+  //FIX IT. ev not of type any
+  export default (ev: any, toElement?:Element) => {
     toElement = toElement || ev.currentTarget;
   
-    const toElementBoundingRect = toElement.getBoundingClientRect();
+    const toElementBoundingRect = toElement!.getBoundingClientRect();
     const orgEv = ev.originalEvent || ev;
     const hasTouches = ev.touches && ev.touches.length;
     let pageX = 0;
