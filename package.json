@@ -1,8 +1,9 @@
 {
-  "name": "indoorjs",
-  "version": "1.0.19",
-  "description": "Canvas based indoor maps",
-  "main": "dist/indoor.js",
+  "name": "indoor-mapping-node",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "FabricJS canvas based indoor maps for NodeJS (TypeScript)",
+  "main": "dist/indoorNode.js",
   "scripts": {
     "docs": "node ./build/docs.js",
     "pretest": "npm run lint && npm run lint-spec",
@@ -22,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mudin/indoorjs.git"
+    "url": "git+https://github.com/Sikhi/IndoorMappingNode"
   },
   "keywords": [
     "indoorjs",
@@ -32,58 +33,23 @@
     "grid",
     "axis",
     "polar",
-    "cartesian"
+    "cartesian",
+    "fabricjs",
+    "node"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mudin/indoorjs/issues"
+    "url": "https://github.com/Sikhi/IndoorMappingNode/issues"
   },
-  "homepage": "https://github.com/mudin/indoorjs#readme",
+  "homepage": "https://github.com/Sikhi/IndoorMappingNode#readme",
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@babel/register": "^7.4.4",
-    "acorn": "^6.1.1",
-    "babel-eslint": "^8.0.3",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-istanbul": "^5.1.0",
-    "chai": "^4.1.2",
-    "cross-env": "^5.2.0",
-    "css-loader": "^2.1.1",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^4.2.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.1.0",
-    "git-rev-sync": "^1.12.0",
-    "html-webpack-plugin": "^3.2.0",
-    "jsdom": "11.11.0",
-    "jsdom-global": "3.0.2",
-    "mocha": "^4.0.1",
-    "nyc": "^13.1.0",
-    "prettier": "^1.17.1",
-    "rollup": "^1.12.3",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-git-version": "^0.2.1",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-globals": "^1.4.0",
-    "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1",
-    "webpack-dev-server": "^3.3.1",
-    "yargs": "^10.0.3"
+    "@types/fabric": "^4.5.8",
+    "canvas": "^2.9.1",
+    "fabric": "^5.2.1"
   },
   "dependencies": {
-    "eventemitter2": "^5.0.1",
-    "fabric-pure-browser": "^3.4.0",
-    "react": "^17.0.2"
+    "@types/node": "^17.0.41",
+    "typescript": "^4.7.3"
   },
   "nyc": {
     "sourceMap": false,
